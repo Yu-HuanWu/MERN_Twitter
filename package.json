@@ -1,15 +1,15 @@
 {
   "name": "mern-twitter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A twitter clone using MERN stack technology",
   "main": "app.js",
   "scripts": {
     "server:debug": "nodemon --inspect app.js",
-    "server": "nodemon app.js",
     "start": "node app.js",
+    "server": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Yu-Huan Wu",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
