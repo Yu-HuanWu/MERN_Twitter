@@ -26,8 +26,9 @@ class Tweet extends React.Component {
             return (
                 <div>
                     <h2>All Tw@%#ts</h2>
-                    {this.state.tweets.map(tweet => (
-                        <TweetBox key={tweet._id} text={tweet.text} />
+                    {this.state.tweets.map(tweet => 
+                        (
+                        <TweetBox key={tweet._id} text={tweet.text} user={tweet.user}/>
                     ))}
                 </div>
             );

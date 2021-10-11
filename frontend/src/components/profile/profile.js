@@ -11,7 +11,7 @@ class Profile extends React.Component {
     }
 
     componentWillMount() {
-        console.log(this.props.currentUser.id)
+        // console.log(this.props.currentUser.id)
         this.props.fetchUserTweets(this.props.currentUser.id);
     }
 
@@ -27,7 +27,7 @@ class Profile extends React.Component {
                 <div>
                     <h2>All of This User's Tw@%#ts</h2>
                     {this.state.tweets.map(tweet => (
-                        <TweetBox key={tweet._id} text={tweet.text} />
+                        <TweetBox key={tweet._id} text={tweet.text} user={this.props.currentUser.handle}/>
                     ))}
                 </div>
             );
