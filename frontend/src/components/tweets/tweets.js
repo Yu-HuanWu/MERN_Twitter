@@ -21,11 +21,11 @@ class Tweet extends React.Component {
 
     render() {
         if (this.state.tweets.length === 0) {
-            return (<div>There are no Tweets</div>)
+            return (<div>There are no Tw@%#ts</div>)
         } else {
             return (
                 <div>
-                    <h2>All Tweets</h2>
+                    <h2>All Tw@%#ts</h2>
                     {this.state.tweets.map(tweet => (
                         <TweetBox key={tweet._id} text={tweet.text} />
                     ))}

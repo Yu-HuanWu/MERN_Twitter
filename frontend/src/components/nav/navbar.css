@@ -1,0 +1,75 @@
+html {
+    background-color: #657786;
+}
+
+.body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    font-family: "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.background-img {
+    opacity: 0.7;
+}
+
+
+.who-cares {
+    display: flex;
+    /* flex-direction: column; */
+
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 100px;
+    background-color: #1DA1F2;
+    color: #14171A;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.session {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: #1DA1F2;
+    color: #14171A;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main {
+    background-color: #AAB8C2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main h2 {
+    background-color: #F5F8FA;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.main h3 {
+    background-color: #bac6cf;
+    border-bottom: 2px solid #1DA1F2;
+}

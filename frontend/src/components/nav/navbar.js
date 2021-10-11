@@ -18,7 +18,7 @@ class NavBar extends React.Component {
     getLinks() {
         if (this.props.loggedIn) {
             return (
-                <div>
+                <div className="nav">
                     <Link to={'/tweets'}>All Tw@%#ts</Link>
                     <Link to={'/profile'}>Profile</Link>
                     <Link to={'/new_tweet'}>Write a Tw@%#t</Link>
@@ -27,7 +27,7 @@ class NavBar extends React.Component {
             );
         } else {
             return (
-                <div>
+                <div className="session">
                     <Link to={'/signup'}>Signup</Link>
                     <Link to={'/login'}>Login</Link>
                 </div>
@@ -38,7 +38,10 @@ class NavBar extends React.Component {
     render() {
         return (
             <div>
-                <h1>Tw@%#ter</h1>
+                <div className="who-cares">
+                    <img src="https://i.imgur.com/t4s0P1u.png" width="150"></img>
+                    <h1>Tw@%#ter</h1>
+                </div>
                 {this.getLinks()}
             </div>
         );

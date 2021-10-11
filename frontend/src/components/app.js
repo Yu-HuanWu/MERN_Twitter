@@ -11,17 +11,24 @@ import ProfileContainer from './profile/profile_container';
 import TweetComposeContainer from './tweets/tweet_compose_container';
 
 const App = () => (
-    <div>
-        <NavBarContainer />
-        <Switch>
-            <AuthRoute exact path="/" component={MainPage} />
-            <AuthRoute exact path="/login" component={LoginFormContainer} />
-            <AuthRoute exact path="/signup" component={SignupFormContainer} />
+    <div className="body">
+        <div>
+            <img src="https://i.imgur.com/hBMMluk.png" className="background-img" width="550"></img>
+        </div>
+        <div>
+            <NavBarContainer />
+            <div className="main">
+                <Switch>
+                    <AuthRoute exact path="/" component={MainPage} />
+                    <AuthRoute exact path="/login" component={LoginFormContainer} />
+                    <AuthRoute exact path="/signup" component={SignupFormContainer} />
 
-            <ProtectedRoute exact path="/tweets" component={TweetsContainer} />
-            <ProtectedRoute exact path="/profile" component={ProfileContainer} />
-            <ProtectedRoute exact path="/new_tweet" component={TweetComposeContainer} />
-        </Switch>
+                    <ProtectedRoute exact path="/tweets" component={TweetsContainer} />
+                    <ProtectedRoute exact path="/profile" component={ProfileContainer} />
+                    <ProtectedRoute exact path="/new_tweet" component={TweetComposeContainer} />
+                </Switch>
+            </div>
+        </div>
     </div>
 
 );
